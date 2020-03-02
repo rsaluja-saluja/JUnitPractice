@@ -48,7 +48,7 @@ public class CalculatorTest {
 	public void testPerform() {
 		when(cs.addNumbers(2, 4)).thenReturn(6);
 		assertEquals(18, c.perform(2, 4));
-		verify(cs).addNumbers(2, 4);
+		verify(cs).addNumbers(2, 4); //verify if mocked object is called or not.If not called then test would fail
 		
 	}
 
